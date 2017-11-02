@@ -67,13 +67,12 @@
 .btn-danger{
      border: none;
      background: rgba(131,169,185,1);
+     
     
-     line-height: 40px;
-      vertical-align: middle;
 }
 .btn-danger:hover{
   
-  background-color: rgba(131,169,185,1);
+  background-color: rgba(131,169,185,0.6);
 
 }
 
@@ -106,7 +105,7 @@ body{
   clear:both;
 
 }
-.btn {
+.btn-1 {
     margin-top: calc(5% + 25px);
     position: relative;
     display: inline-block;
@@ -127,13 +126,13 @@ body{
     float: left;
 }
 
-.btn svg {
+.btn-1 svg {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.btn svg rect {
+.btn-1 svg rect {
     //stroke: #EC0033;
     stroke-width: 4;
     stroke-dasharray: 353, 0;
@@ -142,7 +141,7 @@ body{
     transition: all 600ms ease;
 }
 
-.btn span{
+.btn-1 span{
   background: rgb(255,130,130);
   background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
   background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
@@ -153,7 +152,7 @@ body{
   -webkit-text-fill-color: transparent;
 }
 
-.btn:hover svg rect {
+.btn-1:hover svg rect {
     stroke-width: 4;
     stroke-dasharray: 196, 543;
     stroke-dashoffset: 437;
