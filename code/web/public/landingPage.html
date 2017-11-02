@@ -8,8 +8,10 @@ body {
 }
 
 .overlay {
-    height: 0%;
-    width: 100%;
+  /*changed height to 100 and width to 0
+  then in script changed to style.width now sliding from right*/
+    height: 100%;
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -62,6 +64,7 @@ body {
   <meta charset="UTF-8">
   <title>Attendance Tracker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="style.css"> 
 </head>
 
@@ -76,19 +79,9 @@ body {
   </div>
 </div>
 
-<p align="right">
+<p align="left">
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;menu </span> </p>
 
-<script>
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
-</script>
-  <link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
 <div class="container">
   
   <a href="http://google.com/" class="btn">
@@ -148,6 +141,15 @@ function closeNav() {
 </a>
 
 </div>
-  
+  <script>
+function openNav() {
+    document.getElementById("myNav").style.width = "25%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
 </body>
 </html>
