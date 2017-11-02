@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Attendance Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<div id="myNav" class="overlay">
+  
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<div class="overlay-content">
+		    <a href="#">About</a>
+		    <a href="#">Services</a>
+		    <a href="#">Clients</a>
+		    <a href="#">Contact</a>
+  		</div>
+</div>
+<p align="left">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;menu </span> </p>
+
+<div class="row">
+	
+	<div class="col-lg-4 col-md-4"></div>
+	<div class="jumbotron col-lg-4 col-md-4">
+		
+	    	
+	    		<div class="input-group">
+	    			
+	   				<input  class="form-control" id="userName" name="user" placeholder="username/email..">
+	   				<br><br><br>
+	   				<input  class="form-control" id="pass" name="password" placeholder="password">
+	   				<br>
+	   				<button class="btn btn-danger form-control" id="placeOrder">Submit</button>
+	    		</div>
+	    		
+	   			<hr>
+	    	
+	    	
+
+	</div>
+
+
+</div>
+  <script>
+function openNav() {
+    document.getElementById("myNav").style.width = "25%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+</body>
+</html>
