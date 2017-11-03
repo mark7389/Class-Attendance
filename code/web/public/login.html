@@ -8,6 +8,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="style.css"> 
+        <script>
+function openNav() {
+	$("#menu").css({display:"none"});
+    document.getElementById("myNav").style.width = "25%";
+    
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    $("#menu").css({display:"block"});
+}
+</script>
 </head>
 <body>
 <div id="myNav" class="overlay">
@@ -20,8 +32,8 @@
 		    <a href="#">Contact</a>
   		</div>
 </div>
-<p align="left">
-<span style="font-size:30px;cursor:pointer; color:#f1f1f1;" onclick="openNav()">&#9776;menu </span> </p>
+<p align="left" id="menu">
+<h1 style="cursor:pointer; color:#f1f1f1;" onclick="openNav()">&#9776;</h1> </p>
 
 <div class="row">
 	
@@ -45,15 +57,7 @@
 
 
 </div>
-  <script>
-function openNav() {
-    document.getElementById("myNav").style.width = "25%";
-}
 
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
-</script>
 
 </body>
 </html>
